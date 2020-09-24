@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DeveloperMulticampFinishProject</string>
+    <string name="leader">Group Leader</string>
+    <string name="join_group">Join the group!</string>
+    <string name="community_banner">Community Banner</string>
+    <string name="leader_image">Leader Image</string>
+    <string name="instagram_button">Instagram Button</string>
+    <string name="twitter_button">Twitter Button</string>
+    <string name="youtube_button">Youtube Button</string>
+
+</resources>

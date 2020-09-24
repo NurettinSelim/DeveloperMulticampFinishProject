@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DeveloperMulticampBitirmeProjesi</string>
+    <string name="join_group">Gruba katıl!</string>
+    <string name="leader">Grup Lideri</string>
+    <string name="community_banner">Topluluk Resmi</string>
+    <string name="leader_image">Lider Resmi</string>
+    <string name="instagram_button">Instagram Butonu</string>
+    <string name="twitter_button">Twitter Butonu</string>
+    <string name="youtube_button">Youtube Butonu</string>
+
+</resources>

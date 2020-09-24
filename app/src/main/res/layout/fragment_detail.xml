@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment">
+
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/community_banner"
+        android:src="@drawable/dsc_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="364dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerInside"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerImage"
+        tools:text="DSC (Developer Student Club) öğrencilerin teori ve pratik arasındaki boşluğu kapatmasına yardımcı olmayı amaçlar. DSC'ler, Google geliştirici teknolojilerine ilgi duyan öğrenciler için üniversite tabanlı topluluk gruplarıdır. Geliştirici olarak büyümeye ilgi duyan tüm lisans veya lisansüstü programlardan öğrenciler kabul edilmektedir. Bir DSC'ye katılarak, öğrenciler bilgilerini peer-to-peer öğrenme ortamında büyütür ve yerel işletmeler ve toplulukları için çözümler geliştirirler. Google destekli gruplardır. Biz de DSC Trakya University olarak Edirne bölgesindeki DSC etkinliklerini düzenliyor ve hepinizi bekliyor olacağız." />
+
+    <ImageView
+        android:id="@+id/leaderPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/leader_image"
+        app:layout_constraintEnd_toEndOf="@+id/_liderText"
+        app:layout_constraintStart_toStartOf="@+id/_liderText"
+        app:layout_constraintTop_toBottomOf="@+id/_liderText"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/leaderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/leaderPhoto"
+        app:layout_constraintStart_toStartOf="@+id/leaderPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/leaderPhoto"
+        tools:text="Leader Name" />
+
+    <TextView
+        android:id="@+id/_liderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/leader"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/instagramButton"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+    <ImageButton
+        android:id="@+id/instagramButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/instagram_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/instagram"
+        app:layout_constraintBottom_toTopOf="@+id/twitterButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/twitterButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/twitter"
+        app:layout_constraintBottom_toTopOf="@+id/youtubeButton"
+        app:layout_constraintEnd_toEndOf="@+id/instagramButton"
+        android:contentDescription="@string/twitter_button" />
+
+    <ImageButton
+        android:id="@+id/youtubeButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/youtube"
+        app:layout_constraintBottom_toTopOf="@+id/participationButton"
+        app:layout_constraintEnd_toEndOf="@+id/twitterButton"
+        android:contentDescription="@string/youtube_button" />
+
+    <Button
+        android:id="@+id/participationButton"
+        android:layout_width="151dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/join_group"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/youtubeButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
